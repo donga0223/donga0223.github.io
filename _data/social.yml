@@ -1,9 +1,9 @@
 - title: Email
-  url: mailto://vszhub@gmail.com
+  url: mailto://donga0223@gmail.com
   icon: fas fa-envelope
-- title: Twitter
-  url: https://twitter.com/vszhub
-  icon: fab fa-twitter
 - title: GitHub
-  url: https://github.com/vszhub/not-pure-poole
+  url: https://github.com/donga0223
   icon: fab fa-github
+- title: LinkedIn
+  url: https://www.linkedin.com/in/dongah-kim-824a4462/
+  icon: fab fa-linkedin
