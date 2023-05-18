@@ -1,11 +1,11 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
-avatar: /avatar.jpeg
+title: Dongah Kim
+description: Postdoctoral fellow BioStatistics in Umass, Amherst
+url: https://donga0223.github.io
+avatar: /Dongah.jpeg
 paginate: 5
 permalink: pretty
-cover_image: /bg.jpeg
+cover_image: /background.jpg
 
 # Gems
 plugins:
@@ -35,8 +35,8 @@ logo: logo.png
 social:
   name: Songzi Vong
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://www.linkedin.com/in/dongah-kim-824a4462/
+    - https://github.com/donga0223
 google_site_verification: xxxxx
 lang: en
 
@@ -54,6 +54,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: Dongah Kim
+  url: https://github.com/donga0223/
+  email: donga0223@gmail.com
