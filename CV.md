@@ -3,5 +3,5 @@ layout: page
 title: CV
 ---
 
-[CV](/_site/CV/Curriculum_Vitae.pdf)
+My CV can be found [here](/_site/CV/Curriculum_Vitae.pdf)
 
