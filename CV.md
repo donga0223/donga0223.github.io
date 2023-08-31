@@ -3,5 +3,5 @@ layout: page
 title: CV
 ---
 
-[CV](/CV/Curriculum_Vitae.pdf)
+[CV](/_site/CV/Curriculum_Vitae.pdf)
 
