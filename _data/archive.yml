@@ -1,9 +1,9 @@
-- type: dates
-  title: Dates
-  url: /dates/
+- type: CV
+  title: CV
+  url: /_site/CV/Curriculum_Vitae.pdf
 #- type: categories
 #  title: Categories
 #  url: /categories/
-- type: tags
-  title: Tags
-  url: /tags/
+- type: Research
+  title: Research
+  url: /_site/Research/Publication_list.pdf
