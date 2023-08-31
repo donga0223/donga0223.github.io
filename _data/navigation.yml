@@ -1,9 +1,9 @@
 - title: About
   url: /about/
 - title: Research
-  url: /Research/
+  url: /_site/Research/Publication_list.pdf
 - title: CV
-  url: /CV/Curriculum_Vitae.pdf
+  url: /_site/CV/Curriculum_Vitae.pdf
 - title: News
   url: /news/
 #- title: Blog
