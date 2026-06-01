@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Dongah Kim",
+    "section": "",
+    "text": "I am a statistician and data scientist with research interests in infectious disease forecasting, spatial epidemiology, and public health surveillance. I received my Ph.D. in Statistics and currently work as a Research Associate at The University of Texas at Austin. My work combines statistical modeling, machine learning, and public health data to better understand disease dynamics and improve forecasting systems."
+  }
+]
