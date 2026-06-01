@@ -7,6 +7,90 @@
     "text": "About this site"
   },
   {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Identification of geographically coherent influenza regions using FPCA and spatially constrained clustering methods.\nRead more"
+  },
+  {
+    "objectID": "projects/index.html#spatial-clustering-of-influenza-dynamics",
+    "href": "projects/index.html#spatial-clustering-of-influenza-dynamics",
+    "title": "Projects",
+    "section": "",
+    "text": "Identification of geographically coherent influenza regions using FPCA and spatially constrained clustering methods.\nRead more"
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html",
+    "href": "projects/spatial-clustering-flu.html",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "Influenza dynamics often vary substantially across geographic regions due to differences in population density, mobility, healthcare utilization, and reporting patterns.\nThis project explores methods for identifying geographically coherent regions with similar influenza activity patterns using spatial and temporal clustering techniques.\nThe goal is to better understand regional influenza dynamics and support geographically adaptive forecasting systems.\n\n\n\n\nMost public health surveillance systems aggregate data using predefined administrative boundaries.\nHowever, disease dynamics may not follow these boundaries naturally.\nThis project investigates whether data-driven regionalization approaches can better capture shared epidemic behavior across locations.\n\n\n\n\nData sources include:\n\nCDC NSSP emergency department surveillance data\nCounty-level influenza indicators\nPopulation and demographic information\n\nStudy regions primarily focus on Texas.\n\n\n\n\nThis project uses functional principal component analysis (FPCA) to reduce high-dimensional influenza time series into a lower-dimensional representation. The resulting FPCA scores are then used as input features for spatially constrained clustering methods.\nMethods explored include:\n\n\nInfluenza trajectories are represented using functional principal component analysis to capture major temporal patterns across regions and seasons.\n\n\n\nA spatially constrained clustering method that partitions regions while preserving geographic connectivity.\n\n\n\nA regionalization method used to identify geographically coherent groups based on temporal similarity and spatial structure.\n\n\n\nA spatially constrained clustering approach that creates contiguous regions using graph-based partitioning methods.\n\n\n\n\nThe primary goal of this project is to identify spatial clustering strategies that are most appropriate for infectious disease forecasting.\nTraditional clustering evaluation metrics, such as silhouette score, are often difficult to apply in this setting because the clustering process is spatially constrained. In these methods, regions can only be grouped if they are geographically adjacent, which substantially restricts the clustering structure compared to unconstrained clustering approaches.\nRather than relying solely on conventional clustering metrics, this project evaluates clustering quality through downstream forecasting performance.\nSpecifically, forecasting models are trained using clustered regions while varying the number of clusters (K). Forecast performance from clustered regions is then compared against forecasts generated at the finest geographic resolution, such as county-level or Hospital Service Area (HSA)-level forecasts.\nThe central research question is:\n\nHow much spatial aggregation can be introduced while still preserving forecasting performance close to local-level forecasts?\n\nThis framework allows the clustering process to be evaluated based on its practical utility for forecasting rather than only geometric or statistical similarity measures.\n\n\n\n\nKey questions include:\n\nWhich spatial clustering approach is most appropriate for influenza forecasting?\nHow much spatial aggregation can be introduced while maintaining forecasting performance close to local-level forecasts?\nDoes increasing the number of clusters (K) improve forecasting performance?\nCan clustered regions achieve forecasting accuracy similar to county-level or Hospital Service Area (HSA)-level forecasting?\nHow should clustering quality be evaluated when spatial contiguity constraints prevent the use of traditional clustering metrics such as silhouette score?\nCan downstream forecasting performance serve as a practical criterion for selecting the optimal number of clusters?\nAre some geographic regions consistently grouped together across influenza seasons?\nCan stable regional structures be identified for operational forecasting systems?\nInstead of performing clustering independently for each season, can multi-year FPCA-based representations produce more stable and interpretable regional structures?\nCan stable clustering structures improve the interpretability and operational usability of influenza forecasting systems?\n\n\n\n\n\nOngoing work includes:\n\nForecast evaluation across clustered regions\nSpatial smoothing approaches\nIntegration with local influenza forecasting systems\n\n\n\n\n\n\nR\nsf\nspdep\nigraph\nggplot2\nFunctional Data Analysis\n\n\n\n\n\nRepository coming soon."
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html#overview",
+    "href": "projects/spatial-clustering-flu.html#overview",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "Influenza dynamics often vary substantially across geographic regions due to differences in population density, mobility, healthcare utilization, and reporting patterns.\nThis project explores methods for identifying geographically coherent regions with similar influenza activity patterns using spatial and temporal clustering techniques.\nThe goal is to better understand regional influenza dynamics and support geographically adaptive forecasting systems."
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html#motivation",
+    "href": "projects/spatial-clustering-flu.html#motivation",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "Most public health surveillance systems aggregate data using predefined administrative boundaries.\nHowever, disease dynamics may not follow these boundaries naturally.\nThis project investigates whether data-driven regionalization approaches can better capture shared epidemic behavior across locations."
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html#data",
+    "href": "projects/spatial-clustering-flu.html#data",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "Data sources include:\n\nCDC NSSP emergency department surveillance data\nCounty-level influenza indicators\nPopulation and demographic information\n\nStudy regions primarily focus on Texas."
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html#methods",
+    "href": "projects/spatial-clustering-flu.html#methods",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "This project uses functional principal component analysis (FPCA) to reduce high-dimensional influenza time series into a lower-dimensional representation. The resulting FPCA scores are then used as input features for spatially constrained clustering methods.\nMethods explored include:\n\n\nInfluenza trajectories are represented using functional principal component analysis to capture major temporal patterns across regions and seasons.\n\n\n\nA spatially constrained clustering method that partitions regions while preserving geographic connectivity.\n\n\n\nA regionalization method used to identify geographically coherent groups based on temporal similarity and spatial structure.\n\n\n\nA spatially constrained clustering approach that creates contiguous regions using graph-based partitioning methods."
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html#goal",
+    "href": "projects/spatial-clustering-flu.html#goal",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "The primary goal of this project is to identify spatial clustering strategies that are most appropriate for infectious disease forecasting.\nTraditional clustering evaluation metrics, such as silhouette score, are often difficult to apply in this setting because the clustering process is spatially constrained. In these methods, regions can only be grouped if they are geographically adjacent, which substantially restricts the clustering structure compared to unconstrained clustering approaches.\nRather than relying solely on conventional clustering metrics, this project evaluates clustering quality through downstream forecasting performance.\nSpecifically, forecasting models are trained using clustered regions while varying the number of clusters (K). Forecast performance from clustered regions is then compared against forecasts generated at the finest geographic resolution, such as county-level or Hospital Service Area (HSA)-level forecasts.\nThe central research question is:\n\nHow much spatial aggregation can be introduced while still preserving forecasting performance close to local-level forecasts?\n\nThis framework allows the clustering process to be evaluated based on its practical utility for forecasting rather than only geometric or statistical similarity measures."
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html#research-questions",
+    "href": "projects/spatial-clustering-flu.html#research-questions",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "Key questions include:\n\nWhich spatial clustering approach is most appropriate for influenza forecasting?\nHow much spatial aggregation can be introduced while maintaining forecasting performance close to local-level forecasts?\nDoes increasing the number of clusters (K) improve forecasting performance?\nCan clustered regions achieve forecasting accuracy similar to county-level or Hospital Service Area (HSA)-level forecasting?\nHow should clustering quality be evaluated when spatial contiguity constraints prevent the use of traditional clustering metrics such as silhouette score?\nCan downstream forecasting performance serve as a practical criterion for selecting the optimal number of clusters?\nAre some geographic regions consistently grouped together across influenza seasons?\nCan stable regional structures be identified for operational forecasting systems?\nInstead of performing clustering independently for each season, can multi-year FPCA-based representations produce more stable and interpretable regional structures?\nCan stable clustering structures improve the interpretability and operational usability of influenza forecasting systems?"
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html#current-work",
+    "href": "projects/spatial-clustering-flu.html#current-work",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "Ongoing work includes:\n\nForecast evaluation across clustered regions\nSpatial smoothing approaches\nIntegration with local influenza forecasting systems"
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html#related-technologies",
+    "href": "projects/spatial-clustering-flu.html#related-technologies",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "R\nsf\nspdep\nigraph\nggplot2\nFunctional Data Analysis"
+  },
+  {
+    "objectID": "projects/spatial-clustering-flu.html#github-repository",
+    "href": "projects/spatial-clustering-flu.html#github-repository",
+    "title": "Spatial Clustering of Influenza Dynamics",
+    "section": "",
+    "text": "Repository coming soon."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Dongah Kim",

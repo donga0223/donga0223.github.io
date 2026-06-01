@@ -1,0 +1,11 @@
+---
+title: "Projects"
+---
+
+# Projects
+
+## Spatial Clustering of Influenza Dynamics
+
+Identification of geographically coherent influenza regions using FPCA and spatially constrained clustering methods.
+
+[Read more](spatial-clustering-flu.qmd)

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>research – Dongah Kim</title>
+<title>Spatial Clustering of Influenza Dynamics – Dongah Kim</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Dongah Kim</span>
     </a>
   </div>
@@ -93,15 +93,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects/index.html"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -115,17 +115,161 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#spatial-clustering-of-influenza-dynamics" id="toc-spatial-clustering-of-influenza-dynamics" class="nav-link active" data-scroll-target="#spatial-clustering-of-influenza-dynamics">Spatial Clustering of Influenza Dynamics</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#functional-pca" id="toc-functional-pca" class="nav-link" data-scroll-target="#functional-pca">Functional PCA</a></li>
+  <li><a href="#skater" id="toc-skater" class="nav-link" data-scroll-target="#skater">SKATER</a></li>
+  <li><a href="#geocluster" id="toc-geocluster" class="nav-link" data-scroll-target="#geocluster">GeoCluster</a></li>
+  <li><a href="#redcap" id="toc-redcap" class="nav-link" data-scroll-target="#redcap">REDCAP</a></li>
+  </ul></li>
+  <li><a href="#goal" id="toc-goal" class="nav-link" data-scroll-target="#goal">Goal</a></li>
+  <li><a href="#research-questions" id="toc-research-questions" class="nav-link" data-scroll-target="#research-questions">Research Questions</a></li>
+  <li><a href="#current-work" id="toc-current-work" class="nav-link" data-scroll-target="#current-work">Current Work</a></li>
+  <li><a href="#related-technologies" id="toc-related-technologies" class="nav-link" data-scroll-target="#related-technologies">Related Technologies</a></li>
+  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">GitHub Repository</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Spatial Clustering of Influenza Dynamics</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
+
+<section id="spatial-clustering-of-influenza-dynamics" class="level1">
+<h1>Spatial Clustering of Influenza Dynamics</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Influenza dynamics often vary substantially across geographic regions due to differences in population density, mobility, healthcare utilization, and reporting patterns.</p>
+<p>This project explores methods for identifying geographically coherent regions with similar influenza activity patterns using spatial and temporal clustering techniques.</p>
+<p>The goal is to better understand regional influenza dynamics and support geographically adaptive forecasting systems.</p>
+<hr>
+</section>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>Most public health surveillance systems aggregate data using predefined administrative boundaries.</p>
+<p>However, disease dynamics may not follow these boundaries naturally.</p>
+<p>This project investigates whether data-driven regionalization approaches can better capture shared epidemic behavior across locations.</p>
+<hr>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>Data sources include:</p>
+<ul>
+<li>CDC NSSP emergency department surveillance data</li>
+<li>County-level influenza indicators</li>
+<li>Population and demographic information</li>
+</ul>
+<p>Study regions primarily focus on Texas.</p>
+<hr>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>This project uses functional principal component analysis (FPCA) to reduce high-dimensional influenza time series into a lower-dimensional representation. The resulting FPCA scores are then used as input features for spatially constrained clustering methods.</p>
+<p>Methods explored include:</p>
+<section id="functional-pca" class="level3">
+<h3 class="anchored" data-anchor-id="functional-pca">Functional PCA</h3>
+<p>Influenza trajectories are represented using functional principal component analysis to capture major temporal patterns across regions and seasons.</p>
+</section>
+<section id="skater" class="level3">
+<h3 class="anchored" data-anchor-id="skater">SKATER</h3>
+<p>A spatially constrained clustering method that partitions regions while preserving geographic connectivity.</p>
+</section>
+<section id="geocluster" class="level3">
+<h3 class="anchored" data-anchor-id="geocluster">GeoCluster</h3>
+<p>A regionalization method used to identify geographically coherent groups based on temporal similarity and spatial structure.</p>
+</section>
+<section id="redcap" class="level3">
+<h3 class="anchored" data-anchor-id="redcap">REDCAP</h3>
+<p>A spatially constrained clustering approach that creates contiguous regions using graph-based partitioning methods.</p>
+</section>
+</section>
+<section id="goal" class="level2">
+<h2 class="anchored" data-anchor-id="goal">Goal</h2>
+<p>The primary goal of this project is to identify spatial clustering strategies that are most appropriate for infectious disease forecasting.</p>
+<p>Traditional clustering evaluation metrics, such as silhouette score, are often difficult to apply in this setting because the clustering process is spatially constrained. In these methods, regions can only be grouped if they are geographically adjacent, which substantially restricts the clustering structure compared to unconstrained clustering approaches.</p>
+<p>Rather than relying solely on conventional clustering metrics, this project evaluates clustering quality through downstream forecasting performance.</p>
+<p>Specifically, forecasting models are trained using clustered regions while varying the number of clusters (K). Forecast performance from clustered regions is then compared against forecasts generated at the finest geographic resolution, such as county-level or Hospital Service Area (HSA)-level forecasts.</p>
+<p>The central research question is:</p>
+<ul>
+<li>How much spatial aggregation can be introduced while still preserving forecasting performance close to local-level forecasts?</li>
+</ul>
+<p>This framework allows the clustering process to be evaluated based on its practical utility for forecasting rather than only geometric or statistical similarity measures.</p>
+<hr>
+</section>
+<section id="research-questions" class="level2">
+<h2 class="anchored" data-anchor-id="research-questions">Research Questions</h2>
+<p>Key questions include:</p>
+<ul>
+<li><p>Which spatial clustering approach is most appropriate for influenza forecasting?</p></li>
+<li><p>How much spatial aggregation can be introduced while maintaining forecasting performance close to local-level forecasts?</p></li>
+<li><p>Does increasing the number of clusters (K) improve forecasting performance?</p></li>
+<li><p>Can clustered regions achieve forecasting accuracy similar to county-level or Hospital Service Area (HSA)-level forecasting?</p></li>
+<li><p>How should clustering quality be evaluated when spatial contiguity constraints prevent the use of traditional clustering metrics such as silhouette score?</p></li>
+<li><p>Can downstream forecasting performance serve as a practical criterion for selecting the optimal number of clusters?</p></li>
+<li><p>Are some geographic regions consistently grouped together across influenza seasons?</p></li>
+<li><p>Can stable regional structures be identified for operational forecasting systems?</p></li>
+<li><p>Instead of performing clustering independently for each season, can multi-year FPCA-based representations produce more stable and interpretable regional structures?</p></li>
+<li><p>Can stable clustering structures improve the interpretability and operational usability of influenza forecasting systems?</p></li>
+</ul>
+<hr>
+</section>
+<section id="current-work" class="level2">
+<h2 class="anchored" data-anchor-id="current-work">Current Work</h2>
+<p>Ongoing work includes:</p>
+<ul>
+<li>Forecast evaluation across clustered regions</li>
+<li>Spatial smoothing approaches</li>
+<li>Integration with local influenza forecasting systems</li>
+</ul>
+<hr>
+</section>
+<section id="related-technologies" class="level2">
+<h2 class="anchored" data-anchor-id="related-technologies">Related Technologies</h2>
+<ul>
+<li>R</li>
+<li>sf</li>
+<li>spdep</li>
+<li>igraph</li>
+<li>ggplot2</li>
+<li>Functional Data Analysis</li>
+</ul>
+<hr>
+</section>
+<section id="github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="github-repository">GitHub Repository</h2>
+<p>Repository coming soon.</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

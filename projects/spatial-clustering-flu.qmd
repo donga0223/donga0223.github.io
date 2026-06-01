@@ -1,0 +1,129 @@
+---
+title: "Spatial Clustering of Influenza Dynamics"
+---
+
+# Spatial Clustering of Influenza Dynamics
+
+## Overview
+
+Influenza dynamics often vary substantially across geographic regions due to differences in population density, mobility, healthcare utilization, and reporting patterns.
+
+This project explores methods for identifying geographically coherent regions with similar influenza activity patterns using spatial and temporal clustering techniques.
+
+The goal is to better understand regional influenza dynamics and support geographically adaptive forecasting systems.
+
+---
+
+## Motivation
+
+Most public health surveillance systems aggregate data using predefined administrative boundaries.
+
+However, disease dynamics may not follow these boundaries naturally.
+
+This project investigates whether data-driven regionalization approaches can better capture shared epidemic behavior across locations.
+
+---
+
+## Data
+
+Data sources include:
+
+* CDC NSSP emergency department surveillance data
+* County-level influenza indicators
+* Population and demographic information
+
+Study regions primarily focus on Texas.
+
+---
+
+## Methods
+
+This project uses functional principal component analysis (FPCA) to reduce high-dimensional influenza time series into a lower-dimensional representation. The resulting FPCA scores are then used as input features for spatially constrained clustering methods.
+
+Methods explored include:
+
+### Functional PCA
+
+Influenza trajectories are represented using functional principal component analysis to capture major temporal patterns across regions and seasons.
+
+### SKATER
+
+A spatially constrained clustering method that partitions regions while preserving geographic connectivity.
+
+### GeoCluster
+
+A regionalization method used to identify geographically coherent groups based on temporal similarity and spatial structure.
+
+### REDCAP
+
+A spatially constrained clustering approach that creates contiguous regions using graph-based partitioning methods.
+
+## Goal
+
+The primary goal of this project is to identify spatial clustering strategies that are most appropriate for infectious disease forecasting.
+
+Traditional clustering evaluation metrics, such as silhouette score, are often difficult to apply in this setting because the clustering process is spatially constrained. In these methods, regions can only be grouped if they are geographically adjacent, which substantially restricts the clustering structure compared to unconstrained clustering approaches.
+
+Rather than relying solely on conventional clustering metrics, this project evaluates clustering quality through downstream forecasting performance.
+
+Specifically, forecasting models are trained using clustered regions while varying the number of clusters (K). Forecast performance from clustered regions is then compared against forecasts generated at the finest geographic resolution, such as county-level or Hospital Service Area (HSA)-level forecasts.
+
+The central research question is:
+
+* How much spatial aggregation can be introduced while still preserving forecasting performance close to local-level forecasts?
+
+This framework allows the clustering process to be evaluated based on its practical utility for forecasting rather than only geometric or statistical similarity measures.
+
+
+---
+
+## Research Questions
+
+Key questions include:
+
+* Which spatial clustering approach is most appropriate for influenza forecasting?
+
+* How much spatial aggregation can be introduced while maintaining forecasting performance close to local-level forecasts?
+
+* Does increasing the number of clusters (K) improve forecasting performance?
+
+* Can clustered regions achieve forecasting accuracy similar to county-level or Hospital Service Area (HSA)-level forecasting?
+
+* How should clustering quality be evaluated when spatial contiguity constraints prevent the use of traditional clustering metrics such as silhouette score?
+
+* Can downstream forecasting performance serve as a practical criterion for selecting the optimal number of clusters?
+
+* Are some geographic regions consistently grouped together across influenza seasons?
+
+* Can stable regional structures be identified for operational forecasting systems?
+
+* Instead of performing clustering independently for each season, can multi-year FPCA-based representations produce more stable and interpretable regional structures?
+
+* Can stable clustering structures improve the interpretability and operational usability of influenza forecasting systems?
+
+---
+
+## Current Work
+
+Ongoing work includes:
+
+* Forecast evaluation across clustered regions
+* Spatial smoothing approaches
+* Integration with local influenza forecasting systems
+
+---
+
+## Related Technologies
+
+* R
+* sf
+* spdep
+* igraph
+* ggplot2
+* Functional Data Analysis
+
+---
+
+## GitHub Repository
+
+Repository coming soon.
