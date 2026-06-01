@@ -2,8 +2,6 @@
 title: "Spatial Clustering of Influenza Dynamics"
 ---
 
-# Spatial Clustering of Influenza Dynamics
-
 ## Overview
 
 Influenza dynamics often vary substantially across geographic regions due to differences in population density, mobility, healthcare utilization, and reporting patterns.
