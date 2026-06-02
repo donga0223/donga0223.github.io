@@ -46,14 +46,14 @@
     "href": "projects/spatial-clustering-flu.html#data",
     "title": "Spatial Clustering of Influenza Dynamics",
     "section": "Data",
-    "text": "Data\nData sources include:\n\nCDC NSSP emergency department surveillance data\nCounty-level influenza indicators\nPopulation and demographic information\n\nStudy regions primarily focus on Texas."
+    "text": "Data\nData sources include:\n\nCDC NSSP emergency department surveillance data\nCounty/HSA/RAC/State-level influenza indicators\nPopulation information\n\nStudy regions primarily focus on Texas."
   },
   {
     "objectID": "projects/spatial-clustering-flu.html#methods",
     "href": "projects/spatial-clustering-flu.html#methods",
     "title": "Spatial Clustering of Influenza Dynamics",
     "section": "Methods",
-    "text": "Methods\nThis project uses functional principal component analysis (FPCA) to reduce high-dimensional influenza time series into a lower-dimensional representation. The resulting FPCA scores are then used as input features for spatially constrained clustering methods.\nMethods explored include:\n\nFunctional PCA\nInfluenza trajectories are represented using functional principal component analysis to capture major temporal patterns across regions and seasons.\n\n\nSKATER\nA spatially constrained clustering method that partitions regions while preserving geographic connectivity.\n\n\nGeoCluster\nA regionalization method used to identify geographically coherent groups based on temporal similarity and spatial structure.\n\n\nREDCAP\nA spatially constrained clustering approach that creates contiguous regions using graph-based partitioning methods."
+    "text": "Methods\nThis project uses functional principal component analysis (FPCA) to reduce high-dimensional influenza time series into a lower-dimensional representation. The resulting FPCA scores are then used as input features for spatially constrained clustering methods.\nMethods explored include:\n\nFunctional PCA\nInfluenza trajectories are represented using functional principal component analysis to capture major temporal patterns across regions and seasons.\n\n\nSKATER (Spatial ’K’luster Analysis by Tree Edge Removal)\nA spatially constrained clustering method that partitions regions while preserving geographic connectivity.\n\n\nGeoCluster\nA regionalization method used to identify geographically coherent groups based on temporal similarity and spatial structure.\n\n\nREDCAP (Regionalization with Dynamically Consstrained Agglometative Clustering and Partitioning)\nA spatially constrained clustering approach that creates contiguous regions using graph-based partitioning methods."
   },
   {
     "objectID": "projects/spatial-clustering-flu.html#goal",
