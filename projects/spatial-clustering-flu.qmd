@@ -27,8 +27,8 @@ This project investigates whether data-driven regionalization approaches can bet
 Data sources include:
 
 * CDC NSSP emergency department surveillance data
-* County-level influenza indicators
-* Population and demographic information
+* County/HSA/RAC/State-level influenza indicators
+* Population information
 
 Study regions primarily focus on Texas.
 
@@ -44,7 +44,7 @@ Methods explored include:
 
 Influenza trajectories are represented using functional principal component analysis to capture major temporal patterns across regions and seasons.
 
-### SKATER
+### SKATER (Spatial 'K'luster Analysis by Tree Edge Removal)
 
 A spatially constrained clustering method that partitions regions while preserving geographic connectivity.
 
@@ -52,7 +52,7 @@ A spatially constrained clustering method that partitions regions while preservi
 
 A regionalization method used to identify geographically coherent groups based on temporal similarity and spatial structure.
 
-### REDCAP
+### REDCAP (Regionalization with Dynamically Consstrained Agglometative Clustering and Partitioning)
 
 A spatially constrained clustering approach that creates contiguous regions using graph-based partitioning methods.
 
